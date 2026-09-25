@@ -1,0 +1,124 @@
+.reviews{
+    padding-bottom: 48px;
+    &_header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        margin-bottom: 32px;
+
+        &-logo{
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            margin-left: auto;
+        }
+        &-rating{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+    }
+
+    &_list{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    
+}
+
+.review__item{
+    background: #F7F7F8;
+    border-radius: 24px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 292px;
+    width: calc(100% / 4 - 16px);
+    min-width: 430px;
+    flex-grow: 1;
+
+    &-header{
+        display: flex;
+        flex-wrap: nowrap;
+        margin-bottom: 13px;
+        height: 65px;
+        gap: 10px;
+    }
+    &-icon{
+        width: 65px;
+        height: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 26px;
+        color: rgb(255, 255, 255);
+        border-radius: 50%;
+        background: aquamarine;
+    }
+    &-name{
+        font-size: 14px;
+        font-weight: 700;
+    }
+    &-date{
+        font-size: 12px;
+    }
+    &-text{
+        background: #EFF0F3;
+        border-radius: 10px;
+        padding: 10px 10px 0 10px;
+        max-height: 115px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        height: 100%;
+    }
+    &-footer{
+        svg{
+            width: 56px;
+            height: 20px;
+            margin-top: 13px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .reviews{
+        padding-top: 16px;
+        padding-bottom: 68px;
+        position: relative;
+
+        .view-all-btn{
+            position: absolute;
+            bottom: 16px;
+            right: 50%;
+            transform: translateX(50%);
+        }
+
+        &_header{
+            margin-bottom: 16px;
+
+            &-logo{
+                > svg{
+                width: 92px;
+                height: 26px;
+            }
+            }
+        }
+        &_list{
+            gap: 8px;
+        }
+        .review__item{
+            border-radius: 16px;
+            padding: 16px;
+            height: 260px;
+            min-width: 0;
+            width: 100%;
+
+            &:not(:nth-child(-n+3)){
+                display: none;
+            }
+        }
+    }
+}
