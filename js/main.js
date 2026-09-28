@@ -1,11 +1,10 @@
 import { Fancybox } from "@fancyapps/ui";
-import Swiper from 'swiper/bundle';
 import { Mask, MaskInput } from "maska"
 import 'jquery';
 
-import './sass/_app.scss';
+import '../sass/_app.scss';
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
-import 'swiper/css/bundle';
+import './slider.js';
 
 Fancybox.bind("[data-fancybox]", {})
 

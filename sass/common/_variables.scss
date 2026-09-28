@@ -1,9 +1,16 @@
 
-
 //variables
 :root {
-  --font-family: "Onest", serif;
+  --font-family: "", serif;
   --main-color: #444444;
   --second-color: #111111;
   --accent-color: #e22e2e;
 }
+
+$FontFamily: "Inter", sans-serif;
+$MainColor: #1C1C1C;
+$SecondColor: #909090;
+$AdditionalColor: #008F5D;
+$ButtonBg: #2FB880;
+$AccentColor: #FAEF62;
+$time: all 0.3s ease;
