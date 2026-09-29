@@ -1,0 +1,90 @@
+@use "../common/variables";
+
+.promo{
+    padding: 30px 0;
+
+    &__list{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
+
+    &__item{
+        background: #FFEEE4;
+        border-radius: 20px;
+        padding: 24px;
+        overflow: hidden;
+        position: relative;
+        min-height: 210px;
+
+        &__content{
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          height: 100%;
+            p{
+                max-width: 253px;
+            }
+        }
+
+        &__img{
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 253px;
+            height: 210px;
+            overflow: hidden;   
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;  
+            
+            img{
+                max-width: 100%;
+                vertical-align: bottom;
+            }
+        }
+        h4{
+            color: #FF6E19;
+        }
+        &__btn{
+            width: fit-content;
+            padding: 12px 20px;
+            border-radius: 8px;
+            border: 1px solid #FF6E19;
+            color: #fff;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 21px;
+            transition: variables.$time;
+            color: #FF6E19 !important;
+            margin-top: auto;
+        }
+
+        &--green{
+            background: #E6F7F2;   
+
+            h4{
+                color: variables.$AdditionalColor;
+            }
+            
+            .promo__item__btn{
+                border: 1px solid variables.$AdditionalColor;
+                color: variables.$AdditionalColor !important;
+            }
+
+        }
+        &--violet{
+            background: #F4ECFB;   
+
+            h4{
+                color: #6E2EA6;
+            }
+            
+            .promo__item__btn{
+                border: 1px solid #6E2EA6;
+                color: #6E2EA6 !important;
+            }
+
+        } 
+    }
+}

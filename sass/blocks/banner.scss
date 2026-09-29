@@ -1,5 +1,6 @@
 @use "../common/variables";
 .banner{
+    margin-bottom: 30px;
     &__swiper{
         &__pagination{
             .swiper-pagination-bullet{
