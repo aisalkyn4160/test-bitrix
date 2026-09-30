@@ -199,31 +199,50 @@
               <div class="popular__heading">
                 <h2>Популярные блюда</h2>
               </div>
-              <div class="swiper">
+              <div class="popular__list swiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                       <div class="popular__item">
+                          <div class="hit-tag">Хит</div>
+                          <label class="like-btn">
+                            <input type="checkbox">
+                            <svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M15.3611 4.56906C15.3611 8.30362 8.5 12.2777 8.5 12.2777C8.5 12.2777 1.63889 8.30362 1.63889 4.56906C1.63889 -0.501539 8.5 -0.433066 8.5 4.02956C8.5 -0.433066 15.3611 -0.36631 15.3611 4.56906Z" stroke="#008F5D" stroke-linejoin="round"/>
+                            </svg>
+                          </label>
                           <div class="popular__item__img">
                             <img src="/public/images/popular1.png" alt="Пицца с беконом">
                           </div>
                           <div class="popular__item__content">
-                            <h6>Пицца с беконом</h6>
-                            <span>300 г</span>
+                            <h6 class="popular__item__title">Пицца с беконом</h6>
+                            <span class="popular__item__weight">300 г</span>
                            <div class="popular__item__bottom">
-                              <div class="popular__item__">
-                                <div class="popular__item__price">
-                                  442,99 ₽
+                              <div class="popular__item__button">
+                                <div class="popular__item__prices">
+                                  <span class="popular__item__price">442,9 ₽</span>
                                   <span class="popular__item__old-price">520 ₽</span>
                                 </div>
-                                <button class="popular__item__btn">В корзину</button>
+                                <button class="popular__item__btn js-open-counter">
+                                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.5 7.5V2C7.5 1.854 7.54683 1.73417 7.6405 1.6405C7.73417 1.54683 7.854 1.5 8 1.5C8.146 1.5 8.26583 1.54683 8.3595 1.6405C8.45317 1.73417 8.5 1.854 8.5 2V7.5H14C14.146 7.5 14.2658 7.54683 14.3595 7.6405C14.4532 7.73417 14.5 7.854 14.5 8C14.5 8.146 14.4532 8.26583 14.3595 8.3595C14.2658 8.45317 14.146 8.5 14 8.5H8.5V14C8.5 14.146 8.45317 14.2658 8.3595 14.3595C8.26583 14.4532 8.146 14.5 8 14.5C7.854 14.5 7.73417 14.4532 7.6405 14.3595C7.54683 14.2658 7.5 14.146 7.5 14V8.5H2C1.854 8.5 1.73417 8.45317 1.6405 8.3595C1.54683 8.26583 1.5 8.146 1.5 8C1.5 7.854 1.54683 7.73417 1.6405 7.6405C1.73417 7.54683 1.854 7.5 2 7.5H7.5Z" fill="white"/>
+                                  </svg>
+                                </button>
                               </div>
                               <div class="popular__item__counter">
-                                <button class="popular__item__counter__btn">-</button>
-                                <div>
+                                <button class="popular__item__btn js-decrement">
+                                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 8.5H14C14.146 8.5 14.2658 8.45317 14.3595 8.3595C14.4532 8.26583 14.5 8.146 14.5 8C14.5 7.854 14.4532 7.73417 14.3595 7.6405C14.2658 7.54683 14.146 7.5 14 7.5H2C1.854 7.5 1.73417 7.54683 1.6405 7.6405C1.54683 7.73417 1.5 7.854 1.5 8C1.5 8.146 1.54683 8.26583 1.6405 8.3595C1.73417 8.45317 1.854 8.5 2 8.5Z" fill="white"/>
+                                  </svg>
+                                </button>
+                                <div class="popular__item__counter__count">
                                    <span class="popular__item__counter__value">1</span>
-                                   <span class="popular__item__counter__price">500 ₽</span>
+                                   <span class="popular__item__counter__price">500,25</span>
                                 </div>
-                                <button class="popular__item__counter__btn">+</button>
+                                <button class="popular__item__btn js-increment">
+                                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.5 7.5V2C7.5 1.854 7.54683 1.73417 7.6405 1.6405C7.73417 1.54683 7.854 1.5 8 1.5C8.146 1.5 8.26583 1.54683 8.3595 1.6405C8.45317 1.73417 8.5 1.854 8.5 2V7.5H14C14.146 7.5 14.2658 7.54683 14.3595 7.6405C14.4532 7.73417 14.5 7.854 14.5 8C14.5 8.146 14.4532 8.26583 14.3595 8.3595C14.2658 8.45317 14.146 8.5 14 8.5H8.5V14C8.5 14.146 8.45317 14.2658 8.3595 14.3595C8.26583 14.4532 8.146 14.5 8 14.5C7.854 14.5 7.73417 14.4532 7.6405 14.3595C7.54683 14.2658 7.5 14.146 7.5 14V8.5H2C1.854 8.5 1.73417 8.45317 1.6405 8.3595C1.54683 8.26583 1.5 8.146 1.5 8C1.5 7.854 1.54683 7.73417 1.6405 7.6405C1.73417 7.54683 1.854 7.5 2 7.5H7.5Z" fill="white"/>
+                                  </svg>
+                                </button>
                               </div>
                            </div>
                           </div>

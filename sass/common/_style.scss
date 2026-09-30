@@ -67,3 +67,32 @@ h6{
 	font-size: 16px;
 	line-height: 21px;
 }
+
+.hit-tag{
+	width: fit-content;
+	background: #FF8400;
+	padding: 2px 8px;
+	border-radius: 50px;
+	color: #fff;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 16px;
+}
+
+.like-btn{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #F1F1F1;
+	cursor: pointer;
+
+	input[type="checkbox"]{
+		display: none;
+	}
+	input[type="checkbox"]:checked ~ svg path{
+		fill: variables.$AdditionalColor;
+	}
+}
