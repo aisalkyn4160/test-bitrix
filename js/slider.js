@@ -38,3 +38,18 @@ const NewProductsSwiper = new Swiper('.new-products__list', {
         prevEl: '.new-products .slider-prev', 
     },
 });
+
+const reviewsSwiper = new Swiper('.reviews__items', {
+    // loop: true,
+    slidesPerView: '4',
+    spaceBetween: 24,
+    speed: 400,
+    // pagination: {
+    //     el: '.popular__swiper__pagination',
+    //     clickable: true,
+    // },
+    navigation: {
+        nextEl: '.reviews .slider-next',
+        prevEl: '.reviews .slider-prev', 
+    },
+});

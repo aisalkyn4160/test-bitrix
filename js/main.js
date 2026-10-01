@@ -63,3 +63,30 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.querySelectorAll(".product-card__counter").forEach(initCounter);
 });
+
+
+// ------------------------------------ reviews----------------------------------------------
+function initReviews() {
+    document.querySelectorAll('.reviews__item').forEach(item => {
+      const text = item.querySelector('.reviews__item__text');
+      const btn = item.querySelector('.reviews__item__toggle');
+      if (!text || !btn) return;
+
+      const isClamped = () => text.scrollHeight > text.clientHeight + 1;
+
+      if (isClamped()) {
+        btn.classList.add('is-visible');
+      }
+
+      btn.addEventListener('click', () => {
+        const opened = text.classList.toggle('is-open');
+        btn.textContent = opened ? 'Свернуть' : 'Читать полностью';
+
+        if (!opened) {
+          btn.classList.toggle('is-visible', isClamped());
+        }
+      });
+    });
+  }
+
+  window.addEventListener('load', initReviews);

@@ -1,0 +1,88 @@
+@use "../common/variables";
+
+.reviews{
+    margin: 60px 0;
+
+    &__heading{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 32px
+    }
+
+    &__item{
+        background: #fff;
+        border-radius: 10px;
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        box-shadow: 0px 4px 10px 0px rgba(82, 82, 82, 0.1);
+        margin-bottom: 32px;
+
+        &__top{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+        &__date{
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            color: variables.$SecondColor;
+        }
+        &__stars{
+            display: grid;
+            grid-template-columns: repeat(5, 24px);
+            margin-top: -12px;
+        }
+        &__text{
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: variables.$SecondColor;
+           
+            &.is-open{
+                -webkit-line-clamp: unset;
+                display: block;
+                overflow: visible;
+
+            }
+        }
+        &__toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: variables.$AdditionalColor;
+            cursor: pointer;
+            padding: 0;
+            font-size: 16px;
+            line-height: 21px;
+            font-weight: 700;
+            text-align: left;
+            width: max-content;
+
+            &.is-visible{
+                display: block;
+            }
+        }
+    }
+
+    &__btn{
+        display: block;
+        width: max-content;
+        margin: 0 auto;
+        border: 1px solid variables.$AdditionalColor;
+        border-radius: 8px;
+        padding: 14px 20px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+        color: variables.$AdditionalColor;
+    }
+}
