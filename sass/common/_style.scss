@@ -74,11 +74,20 @@ h6{
 	padding: 2px 8px;
 	border-radius: 50px;
 	color: #fff;
-	font-weight: 400;
+	font-weight: 300;
 	font-size: 12px;
 	line-height: 16px;
 }
-
+.new-tag{
+	width: fit-content;
+	background: variables.$ButtonBg;
+	padding: 2px 8px;
+	border-radius: 50px;
+	color: #fff;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 16px;
+}
 .like-btn{
 	width: 30px;
 	height: 30px;
@@ -96,3 +105,33 @@ h6{
 		fill: variables.$AdditionalColor;
 	}
 }
+
+.slider-navs{
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+.slider-prev,
+.slider-next{
+	width: 44px;
+	height: 44px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: variables.$ButtonBg;
+	border: 1px solid variables.$ButtonBg;
+	border-radius: 8px;
+	cursor: pointer;
+
+	&:disabled{
+		background-color: transparent;
+		cursor: context-menu;
+
+		svg{
+			path{
+				stroke: variables.$ButtonBg;
+			}
+		}
+	}
+}
+

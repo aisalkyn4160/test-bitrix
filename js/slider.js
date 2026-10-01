@@ -10,15 +10,31 @@ const BannerSwiper = new Swiper('.banner__swiper', {
 });
 
 const PopularSwiper = new Swiper('.popular__list', {
-    loop: true,
-    slidesPerView: 'auto',
-    spaceBetween: 30,
-    pagination: {
-        el: '.popular__swiper__pagination',
-        clickable: true,
-    },
+    // loop: true,
+    slidesPerView: '6',
+    spaceBetween: 24,
+    speed: 400,
+    // pagination: {
+    //     el: '.popular__swiper__pagination',
+    //     clickable: true,
+    // },
     navigation: {
-        nextEl: '.popular__swiper__next',
-        prevEl: '.popular__swiper__prev',
+        nextEl: '.popular .slider-next',
+        prevEl: '.popular .slider-prev', 
+    },
+});
+
+const NewProductsSwiper = new Swiper('.new-products__list', {
+    // loop: true,
+    slidesPerView: '6',
+    spaceBetween: 24,
+    speed: 400,
+    // pagination: {
+    //     el: '.popular__swiper__pagination',
+    //     clickable: true,
+    // },
+    navigation: {
+        nextEl: '.new-products .slider-next',
+        prevEl: '.new-products .slider-prev', 
     },
 });
