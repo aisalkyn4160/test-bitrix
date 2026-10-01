@@ -28,6 +28,9 @@ body{
 	flex-direction: column;
 	height: 100vh;
 }
+.grey-wrapper{
+	background-color: #F8FBF8;
+}
 .container{
 	max-width: 1540px;
 	margin: 0 auto;
@@ -67,7 +70,10 @@ h6{
 	font-size: 16px;
 	line-height: 21px;
 }
-
+p{
+	font-size: 16px;
+	line-height: 24px;
+}
 .hit-tag{
 	width: fit-content;
 	background: #FF8400;
