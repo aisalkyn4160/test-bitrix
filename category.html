@@ -1,0 +1,1099 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delivery food</title>
+  </head>
+  <body>
+    <div class="wrapper page-content">
+      {{> _header}}
+
+      <main class="main">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li><a href="/index.html">Главная</a></li>
+                <li><a href="/catalog.html">Каталог</a></li>
+                <li>Пицца</li>
+            </ul>
+
+            <h2>Пицца</h2>
+            <form class="category__items">
+                <div class="category__item">
+                    <input type="radio" name="category" id="all" checked>
+                    <label for="all"> Все</label>
+                </div>
+                <div class="category__item">
+                    <input type="radio" name="category" id="vegetarian">
+                    <label for="vegetarian"> Вегетарианские</label>
+                </div>
+                 <div class="category__item">
+                    <input type="radio" name="category" id="classic">
+                    <label for="classic"> Классические</label>
+                </div>
+                <div class="category__item">
+                    <input type="radio" name="category" id="closed">
+                    <label for="closed"> Закрытые</label>
+                </div>
+            </form>
+                  
+            <div class="products">
+                <div class="product-card">
+                    <div class="hit-tag">Хит</div>
+                    <label class="like-btn">
+                      <input type="checkbox" />
+                      <svg
+                        width="17"
+                        height="13"
+                        viewBox="0 0 17 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15.3611 4.56906C15.3611 8.30362 8.5 12.2777 8.5 12.2777C8.5 12.2777 1.63889 8.30362 1.63889 4.56906C1.63889 -0.501539 8.5 -0.433066 8.5 4.02956C8.5 -0.433066 15.3611 -0.36631 15.3611 4.56906Z"
+                          stroke="#008F5D"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </label>
+                    <a href="/product.html" class="product-card__img">
+                      <img
+                        src="/public/images/pizza1.png"
+                        alt="Гавайская, пицца 36см"
+                      />    
+                    </a>
+                    <div class="product-card__content">
+                      <a href="/product.html">
+                        <h6 class="product-card__title">Гавайская, пицца 36см</h6>
+                      </a>
+                      <span class="product-card__weight">300 г</span>
+                      <div class="product-card__bottom">
+                        <div class="product-card__button">
+                          <div class="product-card__prices">
+                            <span class="product-card__price">442,9 ₽</span>
+                            <span class="product-card__old-price">520 ₽</span>
+                          </div>
+                          <button class="product-card__btn js-open-counter">
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M7.5 7.5V2C7.5 1.854 7.54683 1.73417 7.6405 1.6405C7.73417 1.54683 7.854 1.5 8 1.5C8.146 1.5 8.26583 1.54683 8.3595 1.6405C8.45317 1.73417 8.5 1.854 8.5 2V7.5H14C14.146 7.5 14.2658 7.54683 14.3595 7.6405C14.4532 7.73417 14.5 7.854 14.5 8C14.5 8.146 14.4532 8.26583 14.3595 8.3595C14.2658 8.45317 14.146 8.5 14 8.5H8.5V14C8.5 14.146 8.45317 14.2658 8.3595 14.3595C8.26583 14.4532 8.146 14.5 8 14.5C7.854 14.5 7.73417 14.4532 7.6405 14.3595C7.54683 14.2658 7.5 14.146 7.5 14V8.5H2C1.854 8.5 1.73417 8.45317 1.6405 8.3595C1.54683 8.26583 1.5 8.146 1.5 8C1.5 7.854 1.54683 7.73417 1.6405 7.6405C1.73417 7.54683 1.854 7.5 2 7.5H7.5Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="product-card__counter">
+                          <button class="product-card__btn js-decrement">
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M2 8.5H14C14.146 8.5 14.2658 8.45317 14.3595 8.3595C14.4532 8.26583 14.5 8.146 14.5 8C14.5 7.854 14.4532 7.73417 14.3595 7.6405C14.2658 7.54683 14.146 7.5 14 7.5H2C1.854 7.5 1.73417 7.54683 1.6405 7.6405C1.54683 7.73417 1.5 7.854 1.5 8C1.5 8.146 1.54683 8.26583 1.6405 8.3595C1.73417 8.45317 1.854 8.5 2 8.5Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </button>
+                          <div class="product-card__counter__count">
+                            <span class="product-card__counter__value">1</span>
+                            <span class="product-card__counter__price"
+                              >500,25</span
+                            >
+                          </div>
+                          <button class="product-card__btn js-increment">
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M7.5 7.5V2C7.5 1.854 7.54683 1.73417 7.6405 1.6405C7.73417 1.54683 7.854 1.5 8 1.5C8.146 1.5 8.26583 1.54683 8.3595 1.6405C8.45317 1.73417 8.5 1.854 8.5 2V7.5H14C14.146 7.5 14.2658 7.54683 14.3595 7.6405C14.4532 7.73417 14.5 7.854 14.5 8C14.5 8.146 14.4532 8.26583 14.3595 8.3595C14.2658 8.45317 14.146 8.5 14 8.5H8.5V14C8.5 14.146 8.45317 14.2658 8.3595 14.3595C8.26583 14.4532 8.146 14.5 8 14.5C7.854 14.5 7.73417 14.4532 7.6405 14.3595C7.54683 14.2658 7.5 14.146 7.5 14V8.5H2C1.854 8.5 1.73417 8.45317 1.6405 8.3595C1.54683 8.26583 1.5 8.146 1.5 8C1.5 7.854 1.54683 7.73417 1.6405 7.6405C1.73417 7.54683 1.854 7.5 2 7.5H7.5Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                </div> 
+                <div class="product-card">
+                    <div class="hit-tag">Хит</div>
+                    <label class="like-btn">
+                      <input type="checkbox" />
+                      <svg
+                        width="17"
+                        height="13"
+                        viewBox="0 0 17 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15.3611 4.56906C15.3611 8.30362 8.5 12.2777 8.5 12.2777C8.5 12.2777 1.63889 8.30362 1.63889 4.56906C1.63889 -0.501539 8.5 -0.433066 8.5 4.02956C8.5 -0.433066 15.3611 -0.36631 15.3611 4.56906Z"
+                          stroke="#008F5D"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </label>
+                    <a href="#" class="product-card__img">
+                      <img
+                        src="/public/images/pizza2.png"
+                        alt="Гавайская, пицца 36см"
+                      />
+                    </a>
+                    <div class="product-card__content">
+                      <a href="#"><h6 class="product-card__title">Гавайская, пицца 36см</h6></a>
+                      <span class="product-card__weight">300 г</span>
+                      <div class="product-card__bottom">
+                        <div class="product-card__button">
+                          <div class="product-card__prices">
+                            <span class="product-card__price">442,9 ₽</span>
+                            <span class="product-card__old-price">520 ₽</span>
+                          </div>
+                          <button class="product-card__btn js-open-counter">
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M7.5 7.5V2C7.5 1.854 7.54683 1.73417 7.6405 1.6405C7.73417 1.54683 7.854 1.5 8 1.5C8.146 1.5 8.26583 1.54683 8.3595 1.6405C8.45317 1.73417 8.5 1.854 8.5 2V7.5H14C14.146 7.5 14.2658 7.54683 14.3595 7.6405C14.4532 7.73417 14.5 7.854 14.5 8C14.5 8.146 14.4532 8.26583 14.3595 8.3595C14.2658 8.45317 14.146 8.5 14 8.5H8.5V14C8.5 14.146 8.45317 14.2658 8.3595 14.3595C8.26583 14.4532 8.146 14.5 8 14.5C7.854 14.5 7.73417 14.4532 7.6405 14.3595C7.54683 14.2658 7.5 14.146 7.5 14V8.5H2C1.854 8.5 1.73417 8.45317 1.6405 8.3595C1.54683 8.26583 1.5 8.146 1.5 8C1.5 7.854 1.54683 7.73417 1.6405 7.6405C1.73417 7.54683 1.854 7.5 2 7.5H7.5Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="product-card__counter">
+                          <button class="product-card__btn js-decrement">
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M2 8.5H14C14.146 8.5 14.2658 8.45317 14.3595 8.3595C14.4532 8.26583 14.5 8.146 14.5 8C14.5 7.854 14.4532 7.73417 14.3595 7.6405C14.2658 7.54683 14.146 7.5 14 7.5H2C1.854 7.5 1.73417 7.54683 1.6405 7.6405C1.54683 7.73417 1.5 7.854 1.5 8C1.5 8.146 1.54683 8.26583 1.6405 8.3595C1.73417 8.45317 1.854 8.5 2 8.5Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </button>
+                          <div class="product-card__counter__count">
+                            <span class="product-card__counter__value">1</span>
+                            <span class="product-card__counter__price"
+                              >500,25</span
+                            >
+                          </div>
+                          <button class="product-card__btn js-increment">
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M7.5 7.5V2C7.5 1.854 7.54683 1.73417 7.6405 1.6405C7.73417 1.54683 7.854 1.5 8 1.5C8.146 1.5 8.26583 1.54683 8.3595 1.6405C8.45317 1.73417 8.5 1.854 8.5 2V7.5H14C14.146 7.5 14.2658 7.54683 14.3595 7.6405C14.4532 7.73417 14.5 7.854 14.5 8C14.5 8.146 14.4532 8.26583 14.3595 8.3595C14.2658 8.45317 14.146 8.5 14 8.5H8.5V14C8.5 14.146 8.45317 14.2658 8.3595 14.3595C8.26583 14.4532 8.146 14.5 8 14.5C7.854 14.5 7.73417 14.4532 7.6405 14.3595C7.54683 14.2658 7.5 14.146 7.5 14V8.5H2C1.854 8.5 1.73417 8.45317 1.6405 8.3595C1.54683 8.26583 1.5 8.146 1.5 8C1.5 7.854 1.54683 7.73417 1.6405 7.6405C1.73417 7.54683 1.854 7.5 2 7.5H7.5Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                </div> 
+                <div class="product-card">
+                    <div class="hit-tag">Хит</div>
+                    <label class="like-btn">
+                      <input type="checkbox" />
+                      <svg
+                        width="17"
+                        height="13"
+                        viewBox="0 0 17 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15.3611 4.56906C15.3611 8.30362 8.5 12.2777 8.5 12.2777C8.5 12.2777 1.63889 8.30362 1.63889 4.56906C1.63889 -0.501539 8.5 -0.433066 8.5 4.02956C8.5 -0.433066 15.3611 -0.36631 15.3611 4.56906Z"
+                          stroke="#008F5D"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </label>
+                    <a href="#" class="product-card__img">
+                      <img
+                        src="/public/images/pizza1.png"
+                        alt="Гавайская, пицца 36см"
+                      />
+                    </a>
+                    <div class="product-card__content">
+                      <a href="#"><h6 class="product-card__title">Гавайская, пицца 36см</h6></a>
+                      <span class="product-card__weight">300 г</span>
+                      <div class="product-card__bottom">
+                        <div class="product-card__button">
+                          <div class="product-card__prices">
+                            <span class="product-card__price">442,9 ₽</span>
+                            <span class="product-card__old-price">520 ₽</span>
+                          </div>
+                          <button class="product-card__btn js-open-counter">
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M7.5 7.5V2C7.5 1.854 7.54683 1.73417 7.6405 1.6405C7.73417 1.54683 7.854 1.5 8 1.5C8.146 1.5 8.26583 1.54683 8.3595 1.6405C8.45317 1.73417 8.5 1.854 8.5 2V7.5H14C14.146 7.5 14.2658 7.54683 14.3595 7.6405C14.4532 7.73417 14.5 7.854 14.5 8C14.5 8.146 14.4532 8.26583 14.3595 8.3595C14.2658 8.45317 14.146 8.5 14 8.5H8.5V14C8.5 14.146 8.45317 14.2658 8.3595 14.3595C8.26583 14.4532 8.146 14.5 8 14.5C7.854 14.5 7.73417 14.4532 7.6405 14.3595C7.54683 14.2658 7.5 14.146 7.5 14V8.5H2C1.854 8.5 1.73417 8.45317 1.6405 8.3595C1.54683 8.26583 1.5 8.146 1.5 8C1.5 7.854 1.54683 7.73417 1.6405 7.6405C1.73417 7.54683 1.854 7.5 2 7.5H7.5Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="product-card__counter">
+                          <button class="product-card__btn js-decrement">
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M2 8.5H14C14.146 8.5 14.2658 8.45317 14.3595 8.3595C14.4532 8.26583 14.5 8.146 14.5 8C14.5 7.854 14.4532 7.73417 14.3595 7.6405C14.2658 7.54683 14.146 7.5 14 7.5H2C1.854 7.5 1.73417 7.54683 1.6405 7.6405C1.54683 7.73417 1.5 7.854 1.5 8C1.5 8.146 1.54683 8.26583 1.6405 8.3595C1.73417 8.45317 1.854 8.5 2 8.5Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </button>
+                          <div class="product-card__counter__count">
+                            <span class="product-card__counter__value">1</span>
+                            <span class="product-card__counter__price"
+                              >500,25</span
+                            >
+                          </div>
+                          <button class="product-card__btn js-increment">
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M7.5 7.5V2C7.5 1.854 7.54683 1.73417 7.6405 1.6405C7.73417 1.54683 7.854 1.5 8 1.5C8.146 1.5 8.26583 1.54683 8.3595 1.6405C8.45317 1.73417 8.5 1.854 8.5 2V7.5H14C14.146 7.5 14.2658 7.54683 14.3595 7.6405C14.4532 7.73417 14.5 7.854 14.5 8C14.5 8.146 14.4532 8.26583 14.3595 8.3595C14.2658 8.45317 14.146 8.5 14 8.5H8.5V14C8.5 14.146 8.45317 14.2658 8.3595 14.3595C8.26583 14.4532 8.146 14.5 8 14.5C7.854 14.5 7.73417 14.4532 7.6405 14.3595C7.54683 14.2658 7.5 14.146 7.5 14V8.5H2C1.854 8.5 1.73417 8.45317 1.6405 8.3595C1.54683 8.26583 1.5 8.146 1.5 8C1.5 7.854 1.54683 7.73417 1.6405 7.6405C1.73417 7.54683 1.854 7.5 2 7.5H7.5Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                </div> 
+                <div class="product-card">
+                    <div class="hit-tag">Хит</div>
+                    <label class="like-btn">
+                      <input type="checkbox" />
+                      <svg
+                        width="17"
+                        height="13"
+                        viewBox="0 0 17 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15.3611 4.56906C15.3611 8.30362 8.5 12.2777 8.5 12.2777C8.5 12.2777 1.63889 8.30362 1.63889 4.56906C1.63889 -0.501539 8.5 -0.433066 8.5 4.02956C8.5 -0.433066 15.3611 -0.36631 15.3611 4.56906Z"
+                          stroke="#008F5D"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </label>
+                    <div class="product-card__img">
+                      <img
+                        src="/public/images/pizza4.png"
+                        alt="Гавайская, пицца 36см"
+                      />
+                    </div>
+                    <div class="product-card__content">
+                       <a href="#"><h6 class="product-card__title">Гавайская, пицца 36см</h6></a>
+                      <span class="product-card__weight">300 г</span>
+                      <div class="product-card__bottom">
+                        <div class="product-card__button">
+                          <div class="product-card__prices">
+                            <span class="product-card__price">442,9 ₽</span>
+                            <span class="product-card__old-price">520 ₽</span>
+                          </div>
+                          <button class="product-card__btn js-open-counter">
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M7.5 7.5V2C7.5 1.854 7.54683 1.73417 7.6405 1.6405C7.73417 1.54683 7.854 1.5 8 1.5C8.146 1.5 8.26583 1.54683 8.3595 1.6405C8.45317 1.73417 8.5 1.854 8.5 2V7.5H14C14.146 7.5 14.2658 7.54683 14.3595 7.6405C14.4532 7.73417 14.5 7.854 14.5 8C14.5 8.146 14.4532 8.26583 14.3595 8.3595C14.2658 8.45317 14.146 8.5 14 8.5H8.5V14C8.5 14.146 8.45317 14.2658 8.3595 14.3595C8.26583 14.4532 8.146 14.5 8 14.5C7.854 14.5 7.73417 14.4532 7.6405 14.3595C7.54683 14.2658 7.5 14.146 7.5 14V8.5H2C1.854 8.5 1.73417 8.45317 1.6405 8.3595C1.54683 8.26583 1.5 8.146 1.5 8C1.5 7.854 1.54683 7.73417 1.6405 7.6405C1.73417 7.54683 1.854 7.5 2 7.5H7.5Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="product-card__counter">
+                          <button class="product-card__btn js-decrement">
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M2 8.5H14C14.146 8.5 14.2658 8.45317 14.3595 8.3595C14.4532 8.26583 14.5 8.146 14.5 8C14.5 7.854 14.4532 7.73417 14.3595 7.6405C14.2658 7.54683 14.146 7.5 14 7.5H2C1.854 7.5 1.73417 7.54683 1.6405 7.6405C1.54683 7.73417 1.5 7.854 1.5 8C1.5 8.146 1.54683 8.26583 1.6405 8.3595C1.73417 8.45317 1.854 8.5 2 8.5Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </button>
+                          <div class="product-card__counter__count">
+                            <span class="product-card__counter__value">1</span>
+                            <span class="product-card__counter__price"
+                              >500,25</span
+                            >
+                          </div>
+                          <button class="product-card__btn js-increment">
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M7.5 7.5V2C7.5 1.854 7.54683 1.73417 7.6405 1.6405C7.73417 1.54683 7.854 1.5 8 1.5C8.146 1.5 8.26583 1.54683 8.3595 1.6405C8.45317 1.73417 8.5 1.854 8.5 2V7.5H14C14.146 7.5 14.2658 7.54683 14.3595 7.6405C14.4532 7.73417 14.5 7.854 14.5 8C14.5 8.146 14.4532 8.26583 14.3595 8.3595C14.2658 8.45317 14.146 8.5 14 8.5H8.5V14C8.5 14.146 8.45317 14.2658 8.3595 14.3595C8.26583 14.4532 8.146 14.5 8 14.5C7.854 14.5 7.73417 14.4532 7.6405 14.3595C7.54683 14.2658 7.5 14.146 7.5 14V8.5H2C1.854 8.5 1.73417 8.45317 1.6405 8.3595C1.54683 8.26583 1.5 8.146 1.5 8C1.5 7.854 1.54683 7.73417 1.6405 7.6405C1.73417 7.54683 1.854 7.5 2 7.5H7.5Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                </div> 
+                <div class="product-card">
+                    <div class="hit-tag">Хит</div>
+                    <label class="like-btn">
+                      <input type="checkbox" />
+                      <svg
+                        width="17"
+                        height="13"
+                        viewBox="0 0 17 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15.3611 4.56906C15.3611 8.30362 8.5 12.2777 8.5 12.2777C8.5 12.2777 1.63889 8.30362 1.63889 4.56906C1.63889 -0.501539 8.5 -0.433066 8.5 4.02956C8.5 -0.433066 15.3611 -0.36631 15.3611 4.56906Z"
+                          stroke="#008F5D"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </label>
+                    <a href="#" class="product-card__img">
+                      <img
+                        src="/public/images/pizza1.png"
+                        alt="Гавайская, пицца 36см"
+                      />
+                    </a>
+                    <div class="product-card__content">
+                       <a href="#"><h6 class="product-card__title">Гавайская, пицца 36см</h6></a>
+                      <span class="product-card__weight">300 г</span>
+                      <div class="product-card__bottom">
+                        <div class="product-card__button">
+                          <div class="product-card__prices">
+                            <span class="product-card__price">442,9 ₽</span>
+                            <span class="product-card__old-price">520 ₽</span>
+                          </div>
+                          <button class="product-card__btn js-open-counter">
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M7.5 7.5V2C7.5 1.854 7.54683 1.73417 7.6405 1.6405C7.73417 1.54683 7.854 1.5 8 1.5C8.146 1.5 8.26583 1.54683 8.3595 1.6405C8.45317 1.73417 8.5 1.854 8.5 2V7.5H14C14.146 7.5 14.2658 7.54683 14.3595 7.6405C14.4532 7.73417 14.5 7.854 14.5 8C14.5 8.146 14.4532 8.26583 14.3595 8.3595C14.2658 8.45317 14.146 8.5 14 8.5H8.5V14C8.5 14.146 8.45317 14.2658 8.3595 14.3595C8.26583 14.4532 8.146 14.5 8 14.5C7.854 14.5 7.73417 14.4532 7.6405 14.3595C7.54683 14.2658 7.5 14.146 7.5 14V8.5H2C1.854 8.5 1.73417 8.45317 1.6405 8.3595C1.54683 8.26583 1.5 8.146 1.5 8C1.5 7.854 1.54683 7.73417 1.6405 7.6405C1.73417 7.54683 1.854 7.5 2 7.5H7.5Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="product-card__counter">
+                          <button class="product-card__btn js-decrement">
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M2 8.5H14C14.146 8.5 14.2658 8.45317 14.3595 8.3595C14.4532 8.26583 14.5 8.146 14.5 8C14.5 7.854 14.4532 7.73417 14.3595 7.6405C14.2658 7.54683 14.146 7.5 14 7.5H2C1.854 7.5 1.73417 7.54683 1.6405 7.6405C1.54683 7.73417 1.5 7.854 1.5 8C1.5 8.146 1.54683 8.26583 1.6405 8.3595C1.73417 8.45317 1.854 8.5 2 8.5Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </button>
+                          <div class="product-card__counter__count">
+                            <span class="product-card__counter__value">1</span>
+                            <span class="product-card__counter__price"
+                              >500,25</span
+                            >
+                          </div>
+                          <button class="product-card__btn js-increment">
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M7.5 7.5V2C7.5 1.854 7.54683 1.73417 7.6405 1.6405C7.73417 1.54683 7.854 1.5 8 1.5C8.146 1.5 8.26583 1.54683 8.3595 1.6405C8.45317 1.73417 8.5 1.854 8.5 2V7.5H14C14.146 7.5 14.2658 7.54683 14.3595 7.6405C14.4532 7.73417 14.5 7.854 14.5 8C14.5 8.146 14.4532 8.26583 14.3595 8.3595C14.2658 8.45317 14.146 8.5 14 8.5H8.5V14C8.5 14.146 8.45317 14.2658 8.3595 14.3595C8.26583 14.4532 8.146 14.5 8 14.5C7.854 14.5 7.73417 14.4532 7.6405 14.3595C7.54683 14.2658 7.5 14.146 7.5 14V8.5H2C1.854 8.5 1.73417 8.45317 1.6405 8.3595C1.54683 8.26583 1.5 8.146 1.5 8C1.5 7.854 1.54683 7.73417 1.6405 7.6405C1.73417 7.54683 1.854 7.5 2 7.5H7.5Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                </div> 
+                <div class="product-card">
+                    <div class="hit-tag">Хит</div>
+                    <label class="like-btn">
+                      <input type="checkbox" />
+                      <svg
+                        width="17"
+                        height="13"
+                        viewBox="0 0 17 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15.3611 4.56906C15.3611 8.30362 8.5 12.2777 8.5 12.2777C8.5 12.2777 1.63889 8.30362 1.63889 4.56906C1.63889 -0.501539 8.5 -0.433066 8.5 4.02956C8.5 -0.433066 15.3611 -0.36631 15.3611 4.56906Z"
+                          stroke="#008F5D"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </label>
+                    <a href="#" class="product-card__img">
+                      <img
+                        src="/public/images/pizza6.png"
+                        alt="Гавайская, пицца 36см"
+                      />
+                    </a>
+                    <div class="product-card__content">
+                       <a href="#"><h6 class="product-card__title">Гавайская, пицца 36см</h6></a>
+                      <span class="product-card__weight">300 г</span>
+                      <div class="product-card__bottom">
+                        <div class="product-card__button">
+                          <div class="product-card__prices">
+                            <span class="product-card__price">442,9 ₽</span>
+                            <span class="product-card__old-price">520 ₽</span>
+                          </div>
+                          <button class="product-card__btn js-open-counter">
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M7.5 7.5V2C7.5 1.854 7.54683 1.73417 7.6405 1.6405C7.73417 1.54683 7.854 1.5 8 1.5C8.146 1.5 8.26583 1.54683 8.3595 1.6405C8.45317 1.73417 8.5 1.854 8.5 2V7.5H14C14.146 7.5 14.2658 7.54683 14.3595 7.6405C14.4532 7.73417 14.5 7.854 14.5 8C14.5 8.146 14.4532 8.26583 14.3595 8.3595C14.2658 8.45317 14.146 8.5 14 8.5H8.5V14C8.5 14.146 8.45317 14.2658 8.3595 14.3595C8.26583 14.4532 8.146 14.5 8 14.5C7.854 14.5 7.73417 14.4532 7.6405 14.3595C7.54683 14.2658 7.5 14.146 7.5 14V8.5H2C1.854 8.5 1.73417 8.45317 1.6405 8.3595C1.54683 8.26583 1.5 8.146 1.5 8C1.5 7.854 1.54683 7.73417 1.6405 7.6405C1.73417 7.54683 1.854 7.5 2 7.5H7.5Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="product-card__counter">
+                          <button class="product-card__btn js-decrement">
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M2 8.5H14C14.146 8.5 14.2658 8.45317 14.3595 8.3595C14.4532 8.26583 14.5 8.146 14.5 8C14.5 7.854 14.4532 7.73417 14.3595 7.6405C14.2658 7.54683 14.146 7.5 14 7.5H2C1.854 7.5 1.73417 7.54683 1.6405 7.6405C1.54683 7.73417 1.5 7.854 1.5 8C1.5 8.146 1.54683 8.26583 1.6405 8.3595C1.73417 8.45317 1.854 8.5 2 8.5Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </button>
+                          <div class="product-card__counter__count">
+                            <span class="product-card__counter__value">1</span>
+                            <span class="product-card__counter__price"
+                              >500,25</span
+                            >
+                          </div>
+                          <button class="product-card__btn js-increment">
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M7.5 7.5V2C7.5 1.854 7.54683 1.73417 7.6405 1.6405C7.73417 1.54683 7.854 1.5 8 1.5C8.146 1.5 8.26583 1.54683 8.3595 1.6405C8.45317 1.73417 8.5 1.854 8.5 2V7.5H14C14.146 7.5 14.2658 7.54683 14.3595 7.6405C14.4532 7.73417 14.5 7.854 14.5 8C14.5 8.146 14.4532 8.26583 14.3595 8.3595C14.2658 8.45317 14.146 8.5 14 8.5H8.5V14C8.5 14.146 8.45317 14.2658 8.3595 14.3595C8.26583 14.4532 8.146 14.5 8 14.5C7.854 14.5 7.73417 14.4532 7.6405 14.3595C7.54683 14.2658 7.5 14.146 7.5 14V8.5H2C1.854 8.5 1.73417 8.45317 1.6405 8.3595C1.54683 8.26583 1.5 8.146 1.5 8C1.5 7.854 1.54683 7.73417 1.6405 7.6405C1.73417 7.54683 1.854 7.5 2 7.5H7.5Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                </div> 
+                <div class="product-card">
+                    <div class="hit-tag">Хит</div>
+                    <label class="like-btn">
+                      <input type="checkbox" />
+                      <svg
+                        width="17"
+                        height="13"
+                        viewBox="0 0 17 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15.3611 4.56906C15.3611 8.30362 8.5 12.2777 8.5 12.2777C8.5 12.2777 1.63889 8.30362 1.63889 4.56906C1.63889 -0.501539 8.5 -0.433066 8.5 4.02956C8.5 -0.433066 15.3611 -0.36631 15.3611 4.56906Z"
+                          stroke="#008F5D"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </label>
+                    <a href="#" class="product-card__img">
+                      <img
+                        src="/public/images/pizza7.png"
+                        alt="Гавайская, пицца 36см"
+                      />
+                    </a>
+                    <div class="product-card__content">
+                      <a href="#"><h6 class="product-card__title">Гавайская, пицца 36см</h6></a>
+                      <span class="product-card__weight">300 г</span>
+                      <div class="product-card__bottom">
+                        <div class="product-card__button">
+                          <div class="product-card__prices">
+                            <span class="product-card__price">442,9 ₽</span>
+                            <span class="product-card__old-price">520 ₽</span>
+                          </div>
+                          <button class="product-card__btn js-open-counter">
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M7.5 7.5V2C7.5 1.854 7.54683 1.73417 7.6405 1.6405C7.73417 1.54683 7.854 1.5 8 1.5C8.146 1.5 8.26583 1.54683 8.3595 1.6405C8.45317 1.73417 8.5 1.854 8.5 2V7.5H14C14.146 7.5 14.2658 7.54683 14.3595 7.6405C14.4532 7.73417 14.5 7.854 14.5 8C14.5 8.146 14.4532 8.26583 14.3595 8.3595C14.2658 8.45317 14.146 8.5 14 8.5H8.5V14C8.5 14.146 8.45317 14.2658 8.3595 14.3595C8.26583 14.4532 8.146 14.5 8 14.5C7.854 14.5 7.73417 14.4532 7.6405 14.3595C7.54683 14.2658 7.5 14.146 7.5 14V8.5H2C1.854 8.5 1.73417 8.45317 1.6405 8.3595C1.54683 8.26583 1.5 8.146 1.5 8C1.5 7.854 1.54683 7.73417 1.6405 7.6405C1.73417 7.54683 1.854 7.5 2 7.5H7.5Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="product-card__counter">
+                          <button class="product-card__btn js-decrement">
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M2 8.5H14C14.146 8.5 14.2658 8.45317 14.3595 8.3595C14.4532 8.26583 14.5 8.146 14.5 8C14.5 7.854 14.4532 7.73417 14.3595 7.6405C14.2658 7.54683 14.146 7.5 14 7.5H2C1.854 7.5 1.73417 7.54683 1.6405 7.6405C1.54683 7.73417 1.5 7.854 1.5 8C1.5 8.146 1.54683 8.26583 1.6405 8.3595C1.73417 8.45317 1.854 8.5 2 8.5Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </button>
+                          <div class="product-card__counter__count">
+                            <span class="product-card__counter__value">1</span>
+                            <span class="product-card__counter__price"
+                              >500,25</span
+                            >
+                          </div>
+                          <button class="product-card__btn js-increment">
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M7.5 7.5V2C7.5 1.854 7.54683 1.73417 7.6405 1.6405C7.73417 1.54683 7.854 1.5 8 1.5C8.146 1.5 8.26583 1.54683 8.3595 1.6405C8.45317 1.73417 8.5 1.854 8.5 2V7.5H14C14.146 7.5 14.2658 7.54683 14.3595 7.6405C14.4532 7.73417 14.5 7.854 14.5 8C14.5 8.146 14.4532 8.26583 14.3595 8.3595C14.2658 8.45317 14.146 8.5 14 8.5H8.5V14C8.5 14.146 8.45317 14.2658 8.3595 14.3595C8.26583 14.4532 8.146 14.5 8 14.5C7.854 14.5 7.73417 14.4532 7.6405 14.3595C7.54683 14.2658 7.5 14.146 7.5 14V8.5H2C1.854 8.5 1.73417 8.45317 1.6405 8.3595C1.54683 8.26583 1.5 8.146 1.5 8C1.5 7.854 1.54683 7.73417 1.6405 7.6405C1.73417 7.54683 1.854 7.5 2 7.5H7.5Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                </div> 
+                <div class="product-card">
+                    <div class="hit-tag">Хит</div>
+                    <label class="like-btn">
+                      <input type="checkbox" />
+                      <svg
+                        width="17"
+                        height="13"
+                        viewBox="0 0 17 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15.3611 4.56906C15.3611 8.30362 8.5 12.2777 8.5 12.2777C8.5 12.2777 1.63889 8.30362 1.63889 4.56906C1.63889 -0.501539 8.5 -0.433066 8.5 4.02956C8.5 -0.433066 15.3611 -0.36631 15.3611 4.56906Z"
+                          stroke="#008F5D"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </label>
+                    <a href="#" class="product-card__img">
+                      <img
+                        src="/public/images/pizza8.png"
+                        alt="Гавайская, пицца 36см"
+                      />
+                    </a>
+                    <div class="product-card__content">
+                      <a href="#"><h6 class="product-card__title">Гавайская, пицца 36см</h6></a>
+                      <span class="product-card__weight">300 г</span>
+                      <div class="product-card__bottom">
+                        <div class="product-card__button">
+                          <div class="product-card__prices">
+                            <span class="product-card__price">442,9 ₽</span>
+                            <span class="product-card__old-price">520 ₽</span>
+                          </div>
+                          <button class="product-card__btn js-open-counter">
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M7.5 7.5V2C7.5 1.854 7.54683 1.73417 7.6405 1.6405C7.73417 1.54683 7.854 1.5 8 1.5C8.146 1.5 8.26583 1.54683 8.3595 1.6405C8.45317 1.73417 8.5 1.854 8.5 2V7.5H14C14.146 7.5 14.2658 7.54683 14.3595 7.6405C14.4532 7.73417 14.5 7.854 14.5 8C14.5 8.146 14.4532 8.26583 14.3595 8.3595C14.2658 8.45317 14.146 8.5 14 8.5H8.5V14C8.5 14.146 8.45317 14.2658 8.3595 14.3595C8.26583 14.4532 8.146 14.5 8 14.5C7.854 14.5 7.73417 14.4532 7.6405 14.3595C7.54683 14.2658 7.5 14.146 7.5 14V8.5H2C1.854 8.5 1.73417 8.45317 1.6405 8.3595C1.54683 8.26583 1.5 8.146 1.5 8C1.5 7.854 1.54683 7.73417 1.6405 7.6405C1.73417 7.54683 1.854 7.5 2 7.5H7.5Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="product-card__counter">
+                          <button class="product-card__btn js-decrement">
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M2 8.5H14C14.146 8.5 14.2658 8.45317 14.3595 8.3595C14.4532 8.26583 14.5 8.146 14.5 8C14.5 7.854 14.4532 7.73417 14.3595 7.6405C14.2658 7.54683 14.146 7.5 14 7.5H2C1.854 7.5 1.73417 7.54683 1.6405 7.6405C1.54683 7.73417 1.5 7.854 1.5 8C1.5 8.146 1.54683 8.26583 1.6405 8.3595C1.73417 8.45317 1.854 8.5 2 8.5Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </button>
+                          <div class="product-card__counter__count">
+                            <span class="product-card__counter__value">1</span>
+                            <span class="product-card__counter__price"
+                              >500,25</span
+                            >
+                          </div>
+                          <button class="product-card__btn js-increment">
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M7.5 7.5V2C7.5 1.854 7.54683 1.73417 7.6405 1.6405C7.73417 1.54683 7.854 1.5 8 1.5C8.146 1.5 8.26583 1.54683 8.3595 1.6405C8.45317 1.73417 8.5 1.854 8.5 2V7.5H14C14.146 7.5 14.2658 7.54683 14.3595 7.6405C14.4532 7.73417 14.5 7.854 14.5 8C14.5 8.146 14.4532 8.26583 14.3595 8.3595C14.2658 8.45317 14.146 8.5 14 8.5H8.5V14C8.5 14.146 8.45317 14.2658 8.3595 14.3595C8.26583 14.4532 8.146 14.5 8 14.5C7.854 14.5 7.73417 14.4532 7.6405 14.3595C7.54683 14.2658 7.5 14.146 7.5 14V8.5H2C1.854 8.5 1.73417 8.45317 1.6405 8.3595C1.54683 8.26583 1.5 8.146 1.5 8C1.5 7.854 1.54683 7.73417 1.6405 7.6405C1.73417 7.54683 1.854 7.5 2 7.5H7.5Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                </div> 
+                <div class="product-card">
+                    <div class="hit-tag">Хит</div>
+                    <label class="like-btn">
+                      <input type="checkbox" />
+                      <svg
+                        width="17"
+                        height="13"
+                        viewBox="0 0 17 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15.3611 4.56906C15.3611 8.30362 8.5 12.2777 8.5 12.2777C8.5 12.2777 1.63889 8.30362 1.63889 4.56906C1.63889 -0.501539 8.5 -0.433066 8.5 4.02956C8.5 -0.433066 15.3611 -0.36631 15.3611 4.56906Z"
+                          stroke="#008F5D"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </label>
+                    <a href="#" class="product-card__img">
+                      <img
+                        src="/public/images/pizza9.png"
+                        alt="Гавайская, пицца 36см"
+                      />
+                    </a>
+                    <div class="product-card__content">
+                      <a href="#"><h6 class="product-card__title">Гавайская, пицца 36см</h6></a>
+                      <span class="product-card__weight">300 г</span>
+                      <div class="product-card__bottom">
+                        <div class="product-card__button">
+                          <div class="product-card__prices">
+                            <span class="product-card__price">442,9 ₽</span>
+                            <span class="product-card__old-price">520 ₽</span>
+                          </div>
+                          <button class="product-card__btn js-open-counter">
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M7.5 7.5V2C7.5 1.854 7.54683 1.73417 7.6405 1.6405C7.73417 1.54683 7.854 1.5 8 1.5C8.146 1.5 8.26583 1.54683 8.3595 1.6405C8.45317 1.73417 8.5 1.854 8.5 2V7.5H14C14.146 7.5 14.2658 7.54683 14.3595 7.6405C14.4532 7.73417 14.5 7.854 14.5 8C14.5 8.146 14.4532 8.26583 14.3595 8.3595C14.2658 8.45317 14.146 8.5 14 8.5H8.5V14C8.5 14.146 8.45317 14.2658 8.3595 14.3595C8.26583 14.4532 8.146 14.5 8 14.5C7.854 14.5 7.73417 14.4532 7.6405 14.3595C7.54683 14.2658 7.5 14.146 7.5 14V8.5H2C1.854 8.5 1.73417 8.45317 1.6405 8.3595C1.54683 8.26583 1.5 8.146 1.5 8C1.5 7.854 1.54683 7.73417 1.6405 7.6405C1.73417 7.54683 1.854 7.5 2 7.5H7.5Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="product-card__counter">
+                          <button class="product-card__btn js-decrement">
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M2 8.5H14C14.146 8.5 14.2658 8.45317 14.3595 8.3595C14.4532 8.26583 14.5 8.146 14.5 8C14.5 7.854 14.4532 7.73417 14.3595 7.6405C14.2658 7.54683 14.146 7.5 14 7.5H2C1.854 7.5 1.73417 7.54683 1.6405 7.6405C1.54683 7.73417 1.5 7.854 1.5 8C1.5 8.146 1.54683 8.26583 1.6405 8.3595C1.73417 8.45317 1.854 8.5 2 8.5Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </button>
+                          <div class="product-card__counter__count">
+                            <span class="product-card__counter__value">1</span>
+                            <span class="product-card__counter__price"
+                              >500,25</span
+                            >
+                          </div>
+                          <button class="product-card__btn js-increment">
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M7.5 7.5V2C7.5 1.854 7.54683 1.73417 7.6405 1.6405C7.73417 1.54683 7.854 1.5 8 1.5C8.146 1.5 8.26583 1.54683 8.3595 1.6405C8.45317 1.73417 8.5 1.854 8.5 2V7.5H14C14.146 7.5 14.2658 7.54683 14.3595 7.6405C14.4532 7.73417 14.5 7.854 14.5 8C14.5 8.146 14.4532 8.26583 14.3595 8.3595C14.2658 8.45317 14.146 8.5 14 8.5H8.5V14C8.5 14.146 8.45317 14.2658 8.3595 14.3595C8.26583 14.4532 8.146 14.5 8 14.5C7.854 14.5 7.73417 14.4532 7.6405 14.3595C7.54683 14.2658 7.5 14.146 7.5 14V8.5H2C1.854 8.5 1.73417 8.45317 1.6405 8.3595C1.54683 8.26583 1.5 8.146 1.5 8C1.5 7.854 1.54683 7.73417 1.6405 7.6405C1.73417 7.54683 1.854 7.5 2 7.5H7.5Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                </div> 
+                <div class="product-card">
+                    <div class="hit-tag">Хит</div>
+                    <label class="like-btn">
+                      <input type="checkbox" />
+                      <svg
+                        width="17"
+                        height="13"
+                        viewBox="0 0 17 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15.3611 4.56906C15.3611 8.30362 8.5 12.2777 8.5 12.2777C8.5 12.2777 1.63889 8.30362 1.63889 4.56906C1.63889 -0.501539 8.5 -0.433066 8.5 4.02956C8.5 -0.433066 15.3611 -0.36631 15.3611 4.56906Z"
+                          stroke="#008F5D"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </label>
+                    <a href="#" class="product-card__img">
+                      <img
+                        src="/public/images/pizza1.png"
+                        alt="Гавайская, пицца 36см"
+                      />
+                    </a>
+                    <div class="product-card__content">
+                      <a href="#"><h6 class="product-card__title">Гавайская, пицца 36см</h6></a>
+                      <span class="product-card__weight">300 г</span>
+                      <div class="product-card__bottom">
+                        <div class="product-card__button">
+                          <div class="product-card__prices">
+                            <span class="product-card__price">442,9 ₽</span>
+                            <span class="product-card__old-price">520 ₽</span>
+                          </div>
+                          <button class="product-card__btn js-open-counter">
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M7.5 7.5V2C7.5 1.854 7.54683 1.73417 7.6405 1.6405C7.73417 1.54683 7.854 1.5 8 1.5C8.146 1.5 8.26583 1.54683 8.3595 1.6405C8.45317 1.73417 8.5 1.854 8.5 2V7.5H14C14.146 7.5 14.2658 7.54683 14.3595 7.6405C14.4532 7.73417 14.5 7.854 14.5 8C14.5 8.146 14.4532 8.26583 14.3595 8.3595C14.2658 8.45317 14.146 8.5 14 8.5H8.5V14C8.5 14.146 8.45317 14.2658 8.3595 14.3595C8.26583 14.4532 8.146 14.5 8 14.5C7.854 14.5 7.73417 14.4532 7.6405 14.3595C7.54683 14.2658 7.5 14.146 7.5 14V8.5H2C1.854 8.5 1.73417 8.45317 1.6405 8.3595C1.54683 8.26583 1.5 8.146 1.5 8C1.5 7.854 1.54683 7.73417 1.6405 7.6405C1.73417 7.54683 1.854 7.5 2 7.5H7.5Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="product-card__counter">
+                          <button class="product-card__btn js-decrement">
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M2 8.5H14C14.146 8.5 14.2658 8.45317 14.3595 8.3595C14.4532 8.26583 14.5 8.146 14.5 8C14.5 7.854 14.4532 7.73417 14.3595 7.6405C14.2658 7.54683 14.146 7.5 14 7.5H2C1.854 7.5 1.73417 7.54683 1.6405 7.6405C1.54683 7.73417 1.5 7.854 1.5 8C1.5 8.146 1.54683 8.26583 1.6405 8.3595C1.73417 8.45317 1.854 8.5 2 8.5Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </button>
+                          <div class="product-card__counter__count">
+                            <span class="product-card__counter__value">1</span>
+                            <span class="product-card__counter__price"
+                              >500,25</span
+                            >
+                          </div>
+                          <button class="product-card__btn js-increment">
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M7.5 7.5V2C7.5 1.854 7.54683 1.73417 7.6405 1.6405C7.73417 1.54683 7.854 1.5 8 1.5C8.146 1.5 8.26583 1.54683 8.3595 1.6405C8.45317 1.73417 8.5 1.854 8.5 2V7.5H14C14.146 7.5 14.2658 7.54683 14.3595 7.6405C14.4532 7.73417 14.5 7.854 14.5 8C14.5 8.146 14.4532 8.26583 14.3595 8.3595C14.2658 8.45317 14.146 8.5 14 8.5H8.5V14C8.5 14.146 8.45317 14.2658 8.3595 14.3595C8.26583 14.4532 8.146 14.5 8 14.5C7.854 14.5 7.73417 14.4532 7.6405 14.3595C7.54683 14.2658 7.5 14.146 7.5 14V8.5H2C1.854 8.5 1.73417 8.45317 1.6405 8.3595C1.54683 8.26583 1.5 8.146 1.5 8C1.5 7.854 1.54683 7.73417 1.6405 7.6405C1.73417 7.54683 1.854 7.5 2 7.5H7.5Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                </div> 
+                <div class="product-card">
+                    <div class="hit-tag">Хит</div>
+                    <label class="like-btn">
+                      <input type="checkbox" />
+                      <svg
+                        width="17"
+                        height="13"
+                        viewBox="0 0 17 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15.3611 4.56906C15.3611 8.30362 8.5 12.2777 8.5 12.2777C8.5 12.2777 1.63889 8.30362 1.63889 4.56906C1.63889 -0.501539 8.5 -0.433066 8.5 4.02956C8.5 -0.433066 15.3611 -0.36631 15.3611 4.56906Z"
+                          stroke="#008F5D"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </label>
+                    <a href="#" class="product-card__img">
+                      <img
+                        src="/public/images/pizza11.png"
+                        alt="Гавайская, пицца 36см"
+                      />
+                    </a>
+                    <div class="product-card__content">
+                      <a href="#"><h6 class="product-card__title">Гавайская, пицца 36см</h6></a>
+                      <span class="product-card__weight">300 г</span>
+                      <div class="product-card__bottom">
+                        <div class="product-card__button">
+                          <div class="product-card__prices">
+                            <span class="product-card__price">442,9 ₽</span>
+                            <span class="product-card__old-price">520 ₽</span>
+                          </div>
+                          <button class="product-card__btn js-open-counter">
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M7.5 7.5V2C7.5 1.854 7.54683 1.73417 7.6405 1.6405C7.73417 1.54683 7.854 1.5 8 1.5C8.146 1.5 8.26583 1.54683 8.3595 1.6405C8.45317 1.73417 8.5 1.854 8.5 2V7.5H14C14.146 7.5 14.2658 7.54683 14.3595 7.6405C14.4532 7.73417 14.5 7.854 14.5 8C14.5 8.146 14.4532 8.26583 14.3595 8.3595C14.2658 8.45317 14.146 8.5 14 8.5H8.5V14C8.5 14.146 8.45317 14.2658 8.3595 14.3595C8.26583 14.4532 8.146 14.5 8 14.5C7.854 14.5 7.73417 14.4532 7.6405 14.3595C7.54683 14.2658 7.5 14.146 7.5 14V8.5H2C1.854 8.5 1.73417 8.45317 1.6405 8.3595C1.54683 8.26583 1.5 8.146 1.5 8C1.5 7.854 1.54683 7.73417 1.6405 7.6405C1.73417 7.54683 1.854 7.5 2 7.5H7.5Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="product-card__counter">
+                          <button class="product-card__btn js-decrement">
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M2 8.5H14C14.146 8.5 14.2658 8.45317 14.3595 8.3595C14.4532 8.26583 14.5 8.146 14.5 8C14.5 7.854 14.4532 7.73417 14.3595 7.6405C14.2658 7.54683 14.146 7.5 14 7.5H2C1.854 7.5 1.73417 7.54683 1.6405 7.6405C1.54683 7.73417 1.5 7.854 1.5 8C1.5 8.146 1.54683 8.26583 1.6405 8.3595C1.73417 8.45317 1.854 8.5 2 8.5Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </button>
+                          <div class="product-card__counter__count">
+                            <span class="product-card__counter__value">1</span>
+                            <span class="product-card__counter__price"
+                              >500,25</span
+                            >
+                          </div>
+                          <button class="product-card__btn js-increment">
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M7.5 7.5V2C7.5 1.854 7.54683 1.73417 7.6405 1.6405C7.73417 1.54683 7.854 1.5 8 1.5C8.146 1.5 8.26583 1.54683 8.3595 1.6405C8.45317 1.73417 8.5 1.854 8.5 2V7.5H14C14.146 7.5 14.2658 7.54683 14.3595 7.6405C14.4532 7.73417 14.5 7.854 14.5 8C14.5 8.146 14.4532 8.26583 14.3595 8.3595C14.2658 8.45317 14.146 8.5 14 8.5H8.5V14C8.5 14.146 8.45317 14.2658 8.3595 14.3595C8.26583 14.4532 8.146 14.5 8 14.5C7.854 14.5 7.73417 14.4532 7.6405 14.3595C7.54683 14.2658 7.5 14.146 7.5 14V8.5H2C1.854 8.5 1.73417 8.45317 1.6405 8.3595C1.54683 8.26583 1.5 8.146 1.5 8C1.5 7.854 1.54683 7.73417 1.6405 7.6405C1.73417 7.54683 1.854 7.5 2 7.5H7.5Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                </div> 
+                <div class="product-card">
+                    <div class="hit-tag">Хит</div>
+                    <label class="like-btn">
+                      <input type="checkbox" />
+                      <svg
+                        width="17"
+                        height="13"
+                        viewBox="0 0 17 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15.3611 4.56906C15.3611 8.30362 8.5 12.2777 8.5 12.2777C8.5 12.2777 1.63889 8.30362 1.63889 4.56906C1.63889 -0.501539 8.5 -0.433066 8.5 4.02956C8.5 -0.433066 15.3611 -0.36631 15.3611 4.56906Z"
+                          stroke="#008F5D"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </label>
+                    <a href="#" class="product-card__img">
+                      <img
+                        src="/public/images/pizza1.png"
+                        alt="Гавайская, пицца 36см"
+                      />
+                    </a>
+                    <div class="product-card__content">
+                      <a href="#"><h6 class="product-card__title">Гавайская, пицца 36см</h6></a>
+                      <span class="product-card__weight">300 г</span>
+                      <div class="product-card__bottom">
+                        <div class="product-card__button">
+                          <div class="product-card__prices">
+                            <span class="product-card__price">442,9 ₽</span>
+                            <span class="product-card__old-price">520 ₽</span>
+                          </div>
+                          <button class="product-card__btn js-open-counter">
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M7.5 7.5V2C7.5 1.854 7.54683 1.73417 7.6405 1.6405C7.73417 1.54683 7.854 1.5 8 1.5C8.146 1.5 8.26583 1.54683 8.3595 1.6405C8.45317 1.73417 8.5 1.854 8.5 2V7.5H14C14.146 7.5 14.2658 7.54683 14.3595 7.6405C14.4532 7.73417 14.5 7.854 14.5 8C14.5 8.146 14.4532 8.26583 14.3595 8.3595C14.2658 8.45317 14.146 8.5 14 8.5H8.5V14C8.5 14.146 8.45317 14.2658 8.3595 14.3595C8.26583 14.4532 8.146 14.5 8 14.5C7.854 14.5 7.73417 14.4532 7.6405 14.3595C7.54683 14.2658 7.5 14.146 7.5 14V8.5H2C1.854 8.5 1.73417 8.45317 1.6405 8.3595C1.54683 8.26583 1.5 8.146 1.5 8C1.5 7.854 1.54683 7.73417 1.6405 7.6405C1.73417 7.54683 1.854 7.5 2 7.5H7.5Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="product-card__counter">
+                          <button class="product-card__btn js-decrement">
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M2 8.5H14C14.146 8.5 14.2658 8.45317 14.3595 8.3595C14.4532 8.26583 14.5 8.146 14.5 8C14.5 7.854 14.4532 7.73417 14.3595 7.6405C14.2658 7.54683 14.146 7.5 14 7.5H2C1.854 7.5 1.73417 7.54683 1.6405 7.6405C1.54683 7.73417 1.5 7.854 1.5 8C1.5 8.146 1.54683 8.26583 1.6405 8.3595C1.73417 8.45317 1.854 8.5 2 8.5Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </button>
+                          <div class="product-card__counter__count">
+                            <span class="product-card__counter__value">1</span>
+                            <span class="product-card__counter__price"
+                              >500,25</span
+                            >
+                          </div>
+                          <button class="product-card__btn js-increment">
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M7.5 7.5V2C7.5 1.854 7.54683 1.73417 7.6405 1.6405C7.73417 1.54683 7.854 1.5 8 1.5C8.146 1.5 8.26583 1.54683 8.3595 1.6405C8.45317 1.73417 8.5 1.854 8.5 2V7.5H14C14.146 7.5 14.2658 7.54683 14.3595 7.6405C14.4532 7.73417 14.5 7.854 14.5 8C14.5 8.146 14.4532 8.26583 14.3595 8.3595C14.2658 8.45317 14.146 8.5 14 8.5H8.5V14C8.5 14.146 8.45317 14.2658 8.3595 14.3595C8.26583 14.4532 8.146 14.5 8 14.5C7.854 14.5 7.73417 14.4532 7.6405 14.3595C7.54683 14.2658 7.5 14.146 7.5 14V8.5H2C1.854 8.5 1.73417 8.45317 1.6405 8.3595C1.54683 8.26583 1.5 8.146 1.5 8C1.5 7.854 1.54683 7.73417 1.6405 7.6405C1.73417 7.54683 1.854 7.5 2 7.5H7.5Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+   
+      </main>
+
+      {{> _footer}}
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>
