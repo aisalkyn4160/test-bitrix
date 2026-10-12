@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delivery food</title>
+  </head>
+  <body>
+    <div class="wrapper page-content">
+      {{> _header}}
+
+      <main class="main">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li><a href="/index.html">Главная</a></li>
+                <li>Каталог</li>
+            </ul>
+
+            <h2>Категории</h2>
+
+            <div class="catalog__categories">
+                <a class="catalog__category" href="#">
+                    <img src="/public/images/ctg-pizza.jpg" alt="Пицца">
+                    <p>Пицца</p>
+                </a>
+                <a class="catalog__category" href="#">
+                    <img src="/public/images/ctg-sushi.jpg" alt="Суши">
+                    <p>Суши</p>
+                </a>
+                <a class="catalog__category" href="#">
+                    <img src="/public/images/ctg-burger.jpg" alt="Бургеры">
+                    <p>Бургеры</p>
+                </a>
+                <a class="catalog__category" href="#">
+                    <img src="/public/images/ctg-kebab.jpg" alt="Шашлыки">
+                    <p>Шашлыки</p>
+                </a>
+                <a class="catalog__category" href="#">
+                    <img src="/public/images/ctg-wrapper.jpg" alt="Шаурма">
+                    <p>Шаурма</p>
+                </a>
+                <a class="catalog__category" href="#">
+                    <img src="/public/images/ctg-pie.jpg" alt="Пироги">
+                    <p>Пироги</p>
+                </a>
+                <a class="catalog__category" href="#">
+                    <img src="/public/images/ctg-pasta.jpg" alt="Паста">
+                    <p>Паста</p>
+                </a>
+                <a class="catalog__category" href="#">
+                    <img src="/public/images/ctg-noodle.jpg" alt="Лапша">
+                    <p>Лапша</p>
+                </a>
+                <a class="catalog__category" href="#">
+                    <img src="/public/images/ctg-fastfood.jpg" alt="Фастфуд">
+                    <p>Фастфуд</p>
+                </a>
+                <a class="catalog__category" href="#">
+                    <img src="/public/images/ctg-lunch.jpg" alt="Бизнес-ланчи">
+                    <p>Бизнес-ланчи</p>
+                </a>
+            </div>
+
+        </div>
+   
+      </main>
+
+      {{> _footer}}
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>

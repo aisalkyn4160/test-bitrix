@@ -1,0 +1,32 @@
+@use "../common/variables";
+
+.breadcrumbs{
+    margin: 24px 0;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: variables.$SecondColor;
+
+    li:not(:last-child){
+        display: flex;
+        align-items: center;
+    
+        &::after{
+        content: "";
+        margin: 0 4px;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background: url(/public/icons/arrow.svg) center/cover no-repeat;
+    }
+
+    a{
+        transition: variables.$time;
+        &:hover{
+            color: variables.$AdditionalColor;
+        }
+    }
+    }
+}
