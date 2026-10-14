@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delivery food</title>
+  </head>
+  <body>
+    <div class="wrapper page-content">
+      {{> _header}}
+
+      <main class="main">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li><a href="/index.html">Главная</a></li>
+                <li><a href="/catalog.html">Каталог</a></li>
+                <li><a href="/category.html">Пицца</a></li>
+                <li>Пицца «Сырный цыпленок»</li>
+            </ul>
+            <div class="product"> 
+                <div class="product__img">
+                  <div class="hit-tag">Хит</div>
+                    <label class="like-btn">
+                      <input type="checkbox" />
+                      <svg
+                        width="17"
+                        height="13"
+                        viewBox="0 0 17 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15.3611 4.56906C15.3611 8.30362 8.5 12.2777 8.5 12.2777C8.5 12.2777 1.63889 8.30362 1.63889 4.56906C1.63889 -0.501539 8.5 -0.433066 8.5 4.02956C8.5 -0.433066 15.3611 -0.36631 15.3611 4.56906Z"
+                          stroke="#008F5D"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </label>
+                    <img src="/public/images/pizza8.png" alt="Пицца «Сырный цыпленок»">
+                </div>
+                <div class="product__info">
+                  <div class="product__content">
+                    <h2>Пицца «Сырный цыпленок»</h2>
+                    <span class="product__weight">605 г</span>
+                    <div class="product__description">
+                      <h6>Состав</h6>
+                      <p>Курица маринованная, молокосодержащий продукт «Моцарелла», содержит растительные масла, сыр чеддер, сливочный соус, соус сырный пармеджано, тесто дрожжевое, мука в/с.</p>
+                    </div>
+
+                    <div class="product__nutrition">
+                      <h6>Пищевая ценность</h6>
+
+                      <dl>
+                          <div>
+                              <dt>Белки</dt>
+                              <dd>79  </dd>
+                          </div>
+                          <div>
+                              <dt>Жиры</dt>
+                              <dd>73  </dd>
+                          </div>
+                          <div>
+                              <dt>Углеводы</dt>
+                              <dd>115 </dd>
+                          </div>
+                          <div>
+                              <dt>Энерг. ценность</dt>
+                              <dd>1422 </dd>
+                          </div>
+                      </dl>
+                    </div>
+
+                    <div class="product__ingredients">
+                    <h6>Добавить ингредиенты</h6>
+
+                    <ul>
+                      <li>
+                         <label>
+                          <input type="checkbox" name="ingredient" value="sausages">
+                          <img src="/public//images/ingredient1.png" alt="">
+                          <span class="product__ingredients__name">Колбаски Охотничьи</span>
+                          <span class="product__ingredients__price">56 ₽</span>
+                          <span class="product__ingredients__weight">40 г</span>
+                        </label>
+                      </li>
+                      <li>
+                         <label>
+                          <input type="checkbox" name="ingredient" value="tomato">
+                          <img src="/public//images/ingredient2.png" alt="">
+                          <span class="product__ingredients__name">Помидоры</span>
+                          <span class="product__ingredients__price">40 ₽</span>
+                          <span class="product__ingredients__weight">40 г</span>
+                        </label>
+                      </li>
+                      <li>
+                         <label>
+                          <input type="checkbox" name="ingredient" value="olives">
+                          <img src="/public//images/ingredient3.png" alt="">
+                          <span class="product__ingredients__name">Маслины черные</span>
+                          <span class="product__ingredients__price">56 ₽</span>
+                          <span class="product__ingredients__weight">40 г</span>
+                        </label>
+                      </li>
+                      <li>
+                         <label>
+                          <input type="checkbox" name="ingredient" value="onion">
+                          <img src="/public//images/ingredient4.png" alt="">
+                          <span class="product__ingredients__name">Лук</span>
+                          <span class="product__ingredients__price">56 ₽</span>
+                          <span class="product__ingredients__weight">40 г</span>
+                        </label>
+                      </li>
+                    </ul>
+                    </div>
+                  </div>
+                  <div class="product__order">
+                      <div class="product__order__price">
+                        <data value="600">600 ₽</data>
+                        <button type="submit" class="btn">В корзину</button>
+                      </div>
+                      <div class="product__dough">
+                        <div class="product__dough__item">
+                          <input type="radio" id="dough-traditional" name="dough" value="traditional" checked>
+                          <label for="dough-traditional">Традиционное</label>
+                        </div>
+                        <div class="product__dough__item">
+                          <input type="radio" id="dough-thin" name="dough" value="thin">
+                          <label for="dough-thin">Тонкое</label>
+                        </div>
+                      </div>
+                      <div class="product__size">
+                          <div class="product__size__item">
+                            <input type="radio" id="size-25" name="size" value="25">
+                            <label for="size-25">25 см</label>
+                          </div>
+                          <div class="product__size__item">
+                            <input type="radio" id="size-30" name="size" value="30" checked>
+                            <label for="size-30">30 см</label>
+                          </div>
+                          <div class="product__size__item">
+                            <input type="radio" id="size-40" name="size" value="40">
+                            <label for="size-40">40 см</label>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+   
+      </main>
+
+      {{> _footer}}
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>

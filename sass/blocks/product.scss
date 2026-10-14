@@ -1,0 +1,207 @@
+@use "../common/variables";
+
+ .product{
+        display: flex;
+        gap: 32px;
+
+
+        &__img{
+            flex-shrink: 0;
+            width: 611px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(231, 231, 231, 0.2);
+            border-radius: 20px;
+            position: relative;
+
+            .hit-tag{
+                position: absolute;
+                top: 20px;
+                left: 20px;
+            }
+            .like-btn{
+                position: absolute;
+                top: 20px;
+                right: 20px;
+            }
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+  
+        &__info{
+            display: flex;
+             align-items: flex-start;
+            gap: 20px;
+        }
+
+        &__content{
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            h6{
+                margin-bottom: 12px;
+            }
+        }
+
+        &__weight{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: variables.$SecondColor;
+        }
+
+        &__description{
+            p{
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+        &__nutrition{
+            dl{
+                display: flex;
+                gap: 24px;
+
+                dt{
+                    color: variables.$SecondColor;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                    margin-bottom: 4px;
+                }
+                dd{
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: normal;
+                }
+            }
+        }
+        &__ingredients{
+            ul{
+                border-radius: 12px;
+                padding: 8px;
+                background: #F0F2F5;
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                gap: 8px;
+
+                li{
+                    border-radius: 8px;
+                    background: #fff;
+                    text-align: center;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 16px;
+
+                    input[type="checkbox"]{
+                        display: none;
+                    }
+                    label{
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 8px;
+                        cursor: pointer;
+                        position: relative;
+                        padding: 12px 8px 37px 8px;
+                    }
+
+                    img{
+                        width: 49px;
+                    }
+                }
+            }
+
+            &__name{
+                flex-grow: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 16px;
+            }
+
+            &__price{
+                position: absolute;
+                left: 8px;
+                bottom: 12px;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 1;
+            }
+            &__weight{
+                position: absolute;
+                right: 8px;
+                bottom: 12px;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 1;
+                color: variables.$SecondColor;
+            }
+        }
+        &__order{
+            width: 353px;
+            flex-shrink: 0;
+            background: #F8FBF8;
+            border-radius: 20px;
+            padding: 20px;
+            
+            &__price{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 12px;
+                margin-bottom: 20px;
+
+                data{
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+            }
+        }
+
+        &__dough,
+        &__size{
+            margin-top: 8px;
+            border-radius: 100px;
+            padding: 4px;
+            background: #F0F2F5;
+            display: flex;
+
+            &__item{
+                flex-grow: 1;
+
+                label{
+                    cursor: pointer;
+                    display: block;
+                    height: 100%;
+                    padding: 8px 20px;
+                    border-radius: 100px;
+                    transition: variables.$time;
+                    text-align: center;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 21px;
+                }
+
+                input[type="radio"]{
+                    display: none;
+                }
+                input[type="radio"]:checked + label{
+                    background-color:#fff;
+                    color: variables.$AdditionalColor;
+                    font-weight: 700;
+                    line-height: 21px;
+                }
+            }
+
+        }
+    }
