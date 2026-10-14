@@ -53,3 +53,19 @@ const reviewsSwiper = new Swiper('.reviews__items', {
         prevEl: '.reviews .slider-prev', 
     },
 });
+
+
+const recommendationsSwiper = new Swiper('.recommendations__list', {
+    // loop: true,
+    slidesPerView: '6',
+    spaceBetween: 24,
+    speed: 400,
+    // pagination: {
+    //     el: '.popular__swiper__pagination',
+    //     clickable: true,
+    // },
+    navigation: {
+        nextEl: '.recommendations .slider-next',
+        prevEl: '.recommendations .slider-prev', 
+    },
+});

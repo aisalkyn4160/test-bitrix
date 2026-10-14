@@ -3,6 +3,7 @@
  .product{
         display: flex;
         gap: 32px;
+        margin-bottom: 30px;
 
 
         &__img{
@@ -205,3 +206,12 @@
 
         }
     }
+
+.recommendations{
+    &__heading{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 32px
+    }
+}
