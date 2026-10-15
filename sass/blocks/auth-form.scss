@@ -77,6 +77,30 @@
             color: variables.$AdditionalColor;
         }
     }
+    .password-wrapper{
+        position: relative;
+        width: 100%;
+        height: 50px;
+
+        input{
+            padding-right: 52px;
+        }
+
+        button{
+            width: 22px;
+            height: 22px;
+            background: transparent;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 14px;
+
+
+            .is-visible{
+                
+            }
+        }
+    }
 }
 
 .auth-popup__links{
@@ -115,3 +139,5 @@
         border: 1px solid variables.$AdditionalColor;
     }
 }
+
+

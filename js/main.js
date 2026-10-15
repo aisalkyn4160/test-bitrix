@@ -90,3 +90,33 @@ function initReviews() {
   }
 
   window.addEventListener('load', initReviews);
+
+  // ---------------------------------register-form----------------------------------------------
+  
+Fancybox.bind("[data-fancybox]", {
+  
+  closeExisting: true, 
+ 
+  showClass: false,
+  hideClass: false
+});
+
+// ------------------------------------password---------------------------------------------
+
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleBtns = document.querySelectorAll('.js-password-toggle');
+
+  toggleBtns.forEach(button => {
+    button.addEventListener('click', function(){
+      const wrapper = this.closest('.password-wrapper');
+
+      const passwordInput = wrapper.querySelector('.js-password-input');
+
+      const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+
+      passwordInput.setAttribute('type', type);
+
+      this.classList.toggle('is-visible')
+    })
+  })
+})
