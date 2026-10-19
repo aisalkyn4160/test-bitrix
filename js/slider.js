@@ -69,3 +69,19 @@ const recommendationsSwiper = new Swiper('.recommendations__list', {
         prevEl: '.recommendations .slider-prev', 
     },
 });
+
+
+const cartExtraSwiper = new Swiper('.cart__extra__list', {
+    // loop: true,
+    slidesPerView: 'auto',
+    spaceBetween: 8,
+    speed: 400,
+    // pagination: {
+    //     el: '.popular__swiper__pagination',
+    //     clickable: true,
+    // },
+    navigation: {
+        nextEl: '.recommendations .slider-next',
+        prevEl: '.recommendations .slider-prev', 
+    },
+});

@@ -5,6 +5,7 @@ import "jquery";
 import "../sass/_app.scss";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
 import "./slider.js";
+import "./cart.js";
 
 Fancybox.bind("[data-fancybox]", {});
 
