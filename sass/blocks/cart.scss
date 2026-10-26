@@ -204,6 +204,12 @@
         line-height: 20px;
         color: variables.$SecondColor;
         background: transparent;
+
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
       }
     }
 
@@ -297,6 +303,12 @@
           line-height: 16px;
           color: variables.$SecondColor;
           background: transparent;
+
+          &::-webkit-outer-spin-button,
+          &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+          }
         }
       }
 
@@ -382,4 +394,13 @@
   gap: 20px;
   text-align: center;
   color: variables.$MainColor;
+
+  .f-button {
+   display: none;
+  }
+}
+.cart__delivery__progress {
+  stroke-dasharray: 121;      
+  stroke-dashoffset: 121;  
+  transition: stroke-dashoffset 0.6s ease;
 }
