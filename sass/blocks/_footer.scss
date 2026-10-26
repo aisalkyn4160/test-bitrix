@@ -4,6 +4,21 @@
   padding: 60px 0;
   background-color: #388860;
   color: #fff;
+  position: relative;
+
+  #to-top{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background-color: variables.$ButtonBg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
 
   h6{
     font-weight: 700;

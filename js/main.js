@@ -121,3 +121,14 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   })
 })
+
+
+// -----------------------------------cookies----------------------------------------------
+
+document.addEventListener('DOMContentLoaded', () => {
+  const cookies = document.querySelector('.cookies');
+
+  cookies.querySelector('.cookies__close').addEventListener('click', () => {
+    cookies.style.display = 'none';
+  })
+})
